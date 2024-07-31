@@ -34,9 +34,6 @@ def get_filters():
     days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "all"]
     while day not in days:
         day = input('input a days you want to filter by. \'all\' is a valid option\n').lower()
-       
-    
-
     print('-'*40)
     return city, month, day
 
