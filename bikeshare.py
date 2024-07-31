@@ -6,6 +6,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# functions below
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -32,9 +34,6 @@ def get_filters():
     days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "all"]
     while day not in days:
         day = input('input a days you want to filter by. \'all\' is a valid option\n').lower()
-       
-    
-
     print('-'*40)
     return city, month, day
 
@@ -180,11 +179,6 @@ def main():
                     else: print()
             elif see_data == 'no':
                 break
-
-                          
-                  
-                  
-
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
